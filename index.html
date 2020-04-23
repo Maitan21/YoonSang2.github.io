@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<center>
+		<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:224502 });
+</script>
+	<!-- <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-rkxb2eocmlvb" data-ad-width="320" data-ad-height="50"></ins>
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
+		
+	</center>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>動物顔診断所</title>
+    <meta name="title" content="動物顔診断所">
+    <meta name="subject" content="AIで私似た動物の顔を調べよう!">
+    <meta name="keywords" content="contes">
+    <meta name="author" content="Emong’s Factory">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://animail-face-japan-vcddq.run.goorm.io/Animail_Face_Japan/index.html" />
+    <meta property="og:url" content="https://animail-face-japan-vcddq.run.goorm.io/Animail_Face_Japan/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="動物顔診断所" />
+    <meta property="og:description" content="顔で見る人工知能動物像テスト、私に似た動物像を探してみましょう! 代表的な動物像芸能人の写真データで学習した人工知能が、私の顔で動物像と特徴を探します。 会員登録も必要なく、画面ですぐご確認ください! 写真データはどこにも転送されません。 人工知能が見る私の動物相テストをしてみてください! 子犬さん?猫さん? キツネさん?シカさん?ウサギさん?クマさん?恐竜さん? 顔テストで私に似た動物探しができます。" />
+    <!-- <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fc0eq42%2FbtqCQpiFhFn%2F8KPaOP9q8PXpJFRL7if55K%2Fimg.jpg" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164256095-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-164256095-1');
+    </script>
+</head>
+
+<body>
+    <nav class="p-3 container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="https://emongfactory.tistory.com">動物顔診断所</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+        </div>
+    </nav>
+    <section class="section">
+        <h1 class="title">動物顔診断所</h1>
+        <h2 class="subtitle">私に似た動物顔!?</h2>
+        <h2 class="sr-only">test</h2>
+        <h3 class="sr-only">test</h3>
+        <h4 class="sr-only">test</h4>
+        <p class="sr-only">test</p>
+  
+    <h3 class="pb-2 d-flex justify-content-center"></h3>
+    <section class="d-flex justify-content-center">
+        <p class="d-flex align-items-center pr-3">女</p>
+        <div>
+            <input type="checkbox" id="gender">
+            <label for="gender">
+                <span class="knob">
+                    <i></i>
+                </span>
+            </label>
+        </div>
+        <p class="d-flex align-items-center pl-3">男</p>
+    </section>
+		<section>
+		
+		<pre>
+		<!-- 공백 -->
+		</pre>
+		</section>
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="mt-3 container file-upload">
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+                <img src="img/upload.svg" class="mt-5 pt-5 upload">
+                <h3 class="mb-5 pb-5 pt-4  upload-text">
+                    顔の写真をアップロードしてください!</h3>
+            </div>
+        </div>
+        <div class="file-upload-content">
+            <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <p class="text-center">AIがあなたの動物顔を分析中です。</p>
+            </div>
+            <p class="result-message"></p>
+            <div id="label-container" class="d-flex flex-column justify-content-around"></div>
+            <div id="addThis" class="addthis_inline_share_toolbox_6lz1"></div>
+
+            <div class="pt-3 image-title-wrap">
+                <button type="button p-2" class="try-again-btn" onclick="gaReload1();" data-toggle="modal" data-target="#adModal">
+                    <span class="try-again-text">他の写真で.....</span>
+                </button>
+            </div>
+        </div>
+    </div>
+		
+    <section>
+
+        <center>
+			<pre>
+			</pre>
+			<h4 class="mt-1">"角度や背景により違う結果が出ることもあります"</h4>
+			
+            <span> 不便なことがあればコメント残してください。AIの発展にすごく役に立つます。</span>
+			<pre>
+			</pre>
+			<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:224503 });
+</script>
+            <!-- <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-1hr8oqj40p834" data-ad-width="160" data-ad-height="600"></ins>
+                    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
+        </center>
+		
+    </section>
+    <div class="container pt-3">
+        <div id="disqus_thread"></div>
+    </div>
+    <footer class="footer pt-5 container d-flex justify-content-center">
+        <div>
+        
+            <p>&copy; Edited by Emong's Factory. All Rights Reserved. </p>
+            <p>&copy; Jocoding 2020. All Rights Reserved. </p>
+
+            <ul class="list-inline d-flex justify-content-center">
+
+            </ul>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="adModal" tabindex="-1" role="dialog" aria-labelledby="adModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adModalLabel">(AD)広告　-　もう一回したのボタン押してください。</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+					<!-- 광고배너
+                   <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-vevbkjaub50x" data-ad-width="300" data-ad-height="250"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
+					<script src="https://ads-partners.coupang.com/g.js"></script>
+<script>
+	new PartnersCoupang.G({ id:224491 });
+</script>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button p-2" class="try-again-btn" onclick="gaReload2();">
+                        <span class="try-again-text">他の写真...</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function gaReload1() {
+            gtag('event', '다른 사진으로 재시도 1차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+        }
+
+        function gaReload2() {
+            gtag('event', '다른 사진으로 재시도 2차', {
+                'event_category': '다른 사진으로 재시도'
+            });
+            window.location.reload();
+        }
+    </script>
+    <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document,
+                s = d.createElement('script');
+            s.src = 'https://animal-face-japan.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.image-upload-wrap').hide();
+                    $('#loading').show();
+                    $('.file-upload-image').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+                    $('.image-title').html(input.files[0].name);
+                };
+                reader.readAsDataURL(input.files[0]);
+                init().then(function() {
+                    console.log("hello");
+                    predict();
+                    $('#loading').hide();
+                });
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+        $('.image-upload-wrap').bind('dragover', function() {
+            $('.image-upload-wrap').addClass('image-dropping');
+        });
+        $('.image-upload-wrap').bind('dragleave', function() {
+            $('.image-upload-wrap').removeClass('image-dropping');
+        });
+    </script>
+    <script type="text/javascript">
+        let URL;
+        const urlMale = "https://teachablemachine.withgoogle.com/models/o9D1N5TN/";
+        const urlFemale = "https://teachablemachine.withgoogle.com/models/IWslA7nHk/";
+        let model, webcam, labelContainer, maxPredictions;
+        async function init() {
+            if (document.getElementById("gender").checked) {
+                URL = urlMale;
+            } else {
+                URL = urlFemale;
+            }
+            const modelURL = URL + "model.json";
+            const metadataURL = URL + "metadata.json";
+            model = await tmImage.load(modelURL, metadataURL);
+            maxPredictions = model.getTotalClasses();
+            labelContainer = document.getElementById("label-container");
+            for (let i = 0; i < maxPredictions; i++) {
+                var element = document.createElement("div")
+                element.classList.add("d-flex");
+                labelContainer.appendChild(element);
+            }
+        }
+        async function predict() {
+            var image = document.getElementById("face-image")
+            const prediction = await model.predict(image, false);
+            prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+            console.log(prediction[0].className);
+            var resultTitle, resultExplain, resultCeleb;
+            if (document.getElementById("gender").checked) {
+                gtag('event', '동물상 테스트 수행', {
+                    'event_category': '동물상 테스트 수행',
+                    'event_label': '남자'
+                });
+                switch (prediction[0].className) {
+                    case "dog":
+                        resultTitle = "エネルギッシュなリーダータイプ【犬顔】"
+                        resultExplain = "外向的で社交性があり、比較的誰とでも仲良くできるおおらかな性格の持ち主です。計画的に物事を進めるのが得意なので、高い目標に向かって突き進む力を持っています。例え困難にぶつかった場合でも、別の方法を探して粘り強く努力を継続するでしょう。責任感が強くバイタリティに溢れ、バランス感覚にも優れているので、あらゆる場面でリーダーシップを発揮することが多いです。他人の気持ちに寄り添い、誰も傷つけることなくバランスを考えて結論を出すようにします。ただし、我が強く他者に厳しいところがあるので、最終的には自分の意見を押し通そうとするところが。対応力に優れ、エネルギッシュで熱い話し方をするため会話に説得力はあるものの、反面、自信過剰になりやすい傾向があります。相手の意見もしっかり聞くようにすると、より円滑に物事を進められるはず。"
+                        resultCeleb = "강아지상 연예인: 강다니엘, 백현(엑소), 박보검, 송중기"
+                        gtag('event', '남자 결과 강아지상', {
+                            'event_category': '남자 결과'
+                        });
+                        break;
+                    case "cat":
+                        resultTitle = "意外性があるギャップ萌えタイプ【ネコ顔】"
+                        resultExplain = "過去の経験を大事にし、現実的なものの考え方をします。非常に分析好きで、緻密な計算や論理的に物事を考えていくのが得意なタイプ。計画的に物事を進めますが、あくまでも既存の手法にこだわり、新しいやり方にチャレンジすることは少ないです。責任感が強く行動力もあるのですが、几帳面すぎる性格がゆえ、想定外のことが発生するとパニックになり途中で計画を修正することができません。つまり、臨機応変な対応が苦手なのです。普段はおとなしく自分の気持ちをあまり表情には出しませんが、実は自分にも他人にも厳しいタイプで、自己主張は強いほうです。"
+                        resultCeleb = "고양이상 연예인: 황민현(뉴이스트), 시우민(엑소), 강동원, 이종석, 이준기"
+                        gtag('event', '남자 결과 고양이상', {
+                            'event_category': '남자 결과'
+                        });
+                        break;
+                    case "rabbit":
+                        resultTitle = "クールな大人タイプ【ウサギ顔】"
+                        resultExplain = "思考能力に優れ、どんな場面でも冷静に物事を判断することができるタイプです。責任感が強く、人の気持ちを大切にするやさしい性格の持ち主ですが、心配症で慎重すぎるところがあります。主観的になることなく常に客観的に考えますが、リスクばかりを考えてなかなか行動できないことも。いつまでも既存のやり方にこだわり、新しい試みにチャレンジすることが苦手です。また、自分の好きな分野には没頭して取り組みますが、自分が興味のないことや複雑なことに対しては、はじめから放棄することが多いでしょう。"
+                        resultCeleb = "토끼상 연예인: 정국(방탄소년단), 바비(아이콘), 박지훈(워너원), 수호(엑소)"
+                        gtag('event', '남자 결과 토끼상', {
+                            'event_category': '남자 결과'
+                        });
+                        break;
+                    case "dinosaure":
+                        resultTitle = "ワイルド系イケメンに多い【がワニ顔】"
+                        resultExplain = "正義感が強く、正しいものは正しい、間違っているものは間違っていると白黒ハッキリつけたがるタイプです。なかなか他人を信頼することができないため、人との関わり方においても敵か味方のどちらか2つに分けて判断する傾向があります。自分の意見がブレず、前向きに自信を持って積極的に行動するため、チームの中でリーダーシップを発揮することが多いでしょう。論理的に考えることを得意とし、言動が明確で数学のように答えを導き出すことを好む反面、物事に柔軟に対応したり、意見が対立した場合、安易に多数決で決めるということは苦手です。"
+                        resultCeleb = "공룡상 연예인: 윤두준(하이라이트), 이민기, 김우빈, 육성재(비투비), 공유"
+                        gtag('event', '남자 결과 악어성', {
+                            'event_category': '남자 결과'
+                        });
+                        break;
+                    case "bear":
+                        resultTitle = "明るくパワフルなガキ大将タイプ【ライオン顔】"
+                        resultExplain = "上昇志向が強く、自分が掲げた目標のために積極的に行動する力を持っています。論理的に計画的に進めるよりも、勢いと強い信念で押し進めようとするタイプです。周囲に活気を与えるパワフルな性格で、冒険心や新しいことへのチャレンジ精神もあるので、そのバイタリティーからリーダーシップを発揮することも多いのでは。一方で熱しやすく冷めやすいところがあり、思いつきで行動しがち。ひとつのことが終わる前に別のことに興味を持ち、今までのことをないがしろにしてしまうことが多々あります。周囲の人に対して、話を大げさに伝えて自分に気を引こうとする傾向が強いです。相手の話を聞くよりも、つい自分の過去の功績や自慢話ばかりを話すことが多く、早口でよくしゃべるのも特徴です。常に人の輪の中心にいたいあなたですが、ちょっぴり怒りっぽい性格も重なって「うっとおしい」と思われてしまうことがありそう。"
+                        resultCeleb = "곰상 연예인: 마동석, 조진웅, 조세호, 안재홍"
+                        gtag('event', '남자 결과 라이언상', {
+                            'event_category': '남자 결과'
+                        });
+                        break;
+                    default:
+                        resultTitle = "알수없음"
+                        resultExplain = ""
+                        resultCeleb = ""
+                        gtag('event', '남자 결과 알수없음', {
+                            'event_category': '남자 결과'
+                        });
+                }
+            } else {
+                gtag('event', '동물상 테스트 수행', {
+                    'event_category': '동물상 테스트 수행',
+                    'event_label': '여자'
+                });
+                switch (prediction[0].className) {
+                    case "dog":
+                        resultTitle = "責任感が強いリーダータイプ【犬顔】"
+                        resultExplain = "外向的で社交性があり、比較的誰とでも仲良くできるおおらかな性格の持ち主です。計画的に物事を進めるのが得意なので、高い目標に向かって突き進む力を持っています。例え困難にぶつかった場合でも、別の方法を探して粘り強く努力を継続するでしょう。責任感が強くバイタリティに溢れ、バランス感覚にも優れているので、あらゆる場面でリーダーシップを発揮することが多いです。他人の気持ちに寄り添い、誰も傷つけることなくバランスを考えて結論を出すようにします。ただし、我が強く他者に厳しいところがあるので、最終的には自分の意見を押し通そうとするところが。対応力に優れ、エネルギッシュで熱い話し方をするため会話に説得力はあるものの、反面、自信過剰になりやすい傾向があります。相手の意見もしっかり聞くようにすると、より円滑に物事を進められるはず。"
+                        resultCeleb = "犬顔の芸能人 : 新垣結衣, 橋本環奈, 永野芽郁, 大原櫻子, 秋元真夏"
+                        gtag('event', '여자 결과 강아지상', {
+                            'event_category': '여자 결과'
+                        });
+                        break;
+                    case "cat":
+                        resultTitle = "二面性があるギャップ萌えタイプ【ネコ顔】"
+                        resultExplain = "過去の経験を大事にし、現実的なものの考え方をします。非常に分析好きで、緻密な計算や論理的に物事を考えていくのが得意なタイプ。計画的に物事を進めますが、あくまでも既存の手法にこだわり、新しいやり方にチャレンジすることは少ないです。責任感が強く行動力もあるのですが、几帳面すぎる性格がゆえ、想定外のことが発生するとパニックになり途中で計画を修正することができません。つまり、臨機応変な対応が苦手なのです。普段はおとなしく自分の気持ちをあまり表情には出しませんが、実は自分にも他人にも厳しいタイプで、自己主張は強いほうです。"
+                        resultCeleb = "ネコ顔の芸能人 : 桐谷美玲, 北川景子, 柴咲コウ, 黒木メイサ, 西内まり"
+                        gtag('event', '여자 결과 고양이상', {
+                            'event_category': '여자 결과'
+                        });
+                        break;
+                    case "rabbit":
+                        resultTitle = "控えめで慎重派なインテリタイプ【うさぎ顔】"
+                        resultExplain = "思考能力に優れ、どんな場面でも冷静に物事を判断することができるタイプです。責任感が強く、人の気持ちを大切にするやさしい性格の持ち主ですが、心配症で慎重すぎるところがあります。主観的になることなく常に客観的に考えますが、リスクばかりを考えてなかなか行動できないことも。いつまでも既存のやり方にこだわり、新しい試みにチャレンジすることが苦手です。また、自分の好きな分野には没頭して取り組みますが、自分が興味のないことや複雑なことに対しては、はじめから放棄することが多いでしょう。"
+                        resultCeleb = "ウサギ顔 : 新垣結衣, ナヨン(TWICE), 有村架純, 長澤まさみ, 綾瀬はるか"
+                        gtag('event', '여자 결과 토끼상', {
+                            'event_category': '여자 결과'
+                        });
+                        break;
+                    case "raccoon":
+                        resultTitle = "楽天的なムードメーカータイプ【たぬき顔】"
+                        resultExplain = "楽天家で愛想がよく、やさしくて明るくおおらかな性格なので、組織においても1対1の関係においても、場を和ませるムードメーカーになりやすいです。人と接するのが好きなため、みんなで協力しながらひとつの目標を達成していくことに喜びを感じるタイプでしょう。その反面、人の気持ちを考えすぎるあまり、自分の意見を言えないことがよくあります。また、その場の雰囲気につられて、つい本心とは違うことを言ってしまうことも多そう。あちらにもいい顔、こちらにもいい顔…と八方美人のお調子者になりがちです。"
+                        resultCeleb = "たぬき顔の芸能人 : 石原さとみ, 小嶋真子, 有村架純, 深田恭子, 齋藤飛鳥"
+                        gtag('event', '여자 결과 너구리상', {
+                            'event_category': '여자 결과'
+                        });
+                        break;
+                    case "fox":
+                        resultTitle = "知的で和を重んじるタイプ【キツネ顔】"
+                        resultExplain = "堅実で真面目な性格です。目標達成のために思慮深く計画的に物事を進める力を持っています。しかし、深く考えすぎてしまうため、決断が遅くなる傾向が強いです。交際範囲が広く誰とでも上手く付き合うことができるので、それなりにリーダーシップはありますが、活動性に欠ける一面も。必要以上に周りの目を気にして行動に移せないことが多いため、組織においては参謀役になる傾向があります。また観察力に長けており、いろいろと創意工夫をしながら論理的に問題解決に取り組んでいけます。"
+                        resultCeleb = "キツネ顔 : 北川景子, 加藤あい,　水川あさみ, 菜々緒、北川景子"
+                        gtag('event', '여자 결과 여우상', {
+                            'event_category': '여자 결과'
+                        });
+                        break;
+                    default:
+                        resultTitle = "不明"
+                        resultExplain = ""
+                        resultCeleb = ""
+                        gtag('event', '여자 결과 알수없음', {
+                            'event_category': '여자 결과'
+                        });
+                }
+            }
+            var title = "<div class='" + prediction[0].className + "-animal-title'>" + resultTitle + "</div>"
+            var explain = "<div class='animal-explain pt-2'>" + resultExplain + "</div>"
+            var celeb = "<div class='" + prediction[0].className + "-animal-celeb pt-2 pb-2'>" + resultCeleb + "</div>"
+            $('.result-message').html(title + explain + celeb);
+            var barWidth;
+            for (let i = 0; i < maxPredictions; i++) {
+                if (prediction[i].probability.toFixed(2) > 0.1) {
+                    barWidth = Math.round(prediction[i].probability.toFixed(2) * 100) + "%";
+                } else if (prediction[i].probability.toFixed(2) >= 0.01) {
+                    barWidth = "4%"
+                } else {
+                    barWidth = "2%"
+                }
+                var labelTitle;
+                switch (prediction[i].className) {
+                    case "dog":
+                        labelTitle = "犬顔"
+                        break;
+                    case "cat":
+                        labelTitle = "ネコ顔"
+                        break;
+                    case "rabbit":
+                        labelTitle = "ウサギ顔"
+                        break;
+                    case "dinosaure":
+                        labelTitle = "がワニ顔"
+                        break;
+                    case "bear":
+                        labelTitle = "ライオン顔"
+                        break;
+                    case "raccoon":
+                        labelTitle = "たぬき顔"
+                        break;
+                    case "fox":
+                        labelTitle = "キツネ顔"
+                        break;
+                    default:
+                        labelTitle = "不明"
+                }
+                var label = "<div class='animal-label d-flex align-items-center'>" + labelTitle + "</div>"
+                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
+                labelContainer.childNodes[i].innerHTML = label + bar;
+            }
+        }
+    </script>
+    <script>
+        // function iosApp() {
+        //     document.getElementById("coupang").style.display = "none";
+        //     $("#coupang ins").hide();
+        //     document.getElementById("addThis").style.display = "none";
+        //     document.getElementById("disqus_thread").style.display = "none";
+        //     var kakao = document.getElementsByClassName("kakao_ad_area");
+        //     for (var i = 0; i < kakao.length; i++) {
+        //         if (kakao[i]) {
+        //             kakao[i].style.display = "none";
+        //         }
+        //     }
+        //     document.getElementById("yotube-top-link").style.display = "none";
+        //     document.getElementById("yotube-mid-link").style.display = "none";
+        //     document.getElementById("yotube-bottom-link").style.display = "none";
+        // }
+    </script>
+</body>
+<!-- 
+image input box
+Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+gender toggle
+Copyright (c) 2020 by Mert Cukuren (https://codepen.io/knyttneve/pen/bPpEZY)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ -->
+
+</html>
